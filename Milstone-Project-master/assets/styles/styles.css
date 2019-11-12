@@ -1,0 +1,775 @@
+@import url('https://fonts.googleapis.com/css?family=Quicksand:100,200,300,400,500,600,700,800,900');
+
+
+/*-------------------------------------general*/
+
+html,
+body {
+    font-family: 'Quicksand', sans-serif;
+}
+
+.capital {
+    text-transform: uppercase;
+}
+
+h2 {
+    font-weight: 300;
+    margin-top: 15px;
+    text-transform: uppercase;
+}
+
+h3 {
+    text-align: center;
+    font-weight: 400;
+    text-decoration: underline;
+    padding: 15px;
+
+}
+
+
+/*-------------------------------------background colours*/
+
+body {
+    background-color: #fafafa;
+}
+
+.home-brand-bg {
+    background-color: #fafafa;
+}
+
+.pink-bg {
+    background-color: #ffcaca;
+}
+
+.dark-bg {
+    background-color: #232323;
+}
+
+.comic-bg {
+    background-color: #fafafa;
+}
+
+.portfolio-bg {
+    background-color: #fafafa;
+}
+
+.footer-bg {
+    background-color: #fafafa;
+}
+
+
+
+/*-------------------------------------header*/
+
+.home-brand {
+    height: 120px;
+    position: relative;
+}
+
+.home-brand a {
+    color: #000;
+    text-decoration: none;
+    font-size: 3em;
+    font-weight: 300;
+    margin: 5px;
+    position: relative;
+    top: 22px;
+}
+
+
+.home-brand a::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: -5px;
+    right: -5px;
+    border-top: 3px solid #faa4a3;
+    border-bottom: 3px solid #faa4a3;
+    transform: scale(1);
+    transform-origin: left;
+    transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+
+}
+
+.home-brand a:hover::before {
+    transform: scale(0, 1);
+    transform-origin: left;
+    transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+}
+
+
+
+.home-brand a::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: -5px;
+    right: -5px;
+    border-left: 3px solid #faa4a3;
+    transform: scale(1, 0);
+    transform-origin: top;
+    transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+
+}
+
+.home-brand a:hover::after {
+    transform: scale(1);
+    transform-origin: top;
+    transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+}
+
+/*------------------------------------sub page header*/
+
+.sub-page-header {
+    position: relative;
+    text-align: center;
+    background-color: #fff9f9;
+    color: #1f1f1f;
+    margin: 0;
+    padding: 10px;
+}
+
+.sub-page-header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 1px;
+    right: 1px;
+    border-top: 2px solid #000000;
+    border-bottom: 2px solid #000000;
+    transform: scale(1);
+}
+
+/*-----------------------------------sub header + link animation*/
+
+.sub-header {
+    text-align: center;
+    margin-top: 0;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.sub-header a {
+    color: #000;
+    text-decoration: none;
+    position: relative;
+
+
+}
+
+@media(min-width:768px) {
+
+
+    .sub-header a::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: -5px;
+        right: -5px;
+        border-top: 2px solid;
+        border-bottom: 2px solid;
+        transform: scale(1);
+        transform-origin: left;
+        transition: all 0.3s ease-in-out;
+        -moz-transition: all 0.3s ease-in-out;
+        -o-transition: all 0.3s ease-in-out;
+        -webkit-transition: all 0.3s ease-in-out;
+
+    }
+
+    .sub-header a:hover::before {
+        transform: scale(0, 1);
+        transform-origin: left;
+        transition: all 0.3s ease-in-out;
+        -moz-transition: all 0.3s ease-in-out;
+        -o-transition: all 0.3s ease-in-out;
+        -webkit-transition: all 0.3s ease-in-out;
+    }
+
+
+
+    .sub-header a::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: -5px;
+        right: -5px;
+        border-left: 2px solid;
+        transform: scale(1, 0);
+        transform-origin: top;
+        transition: all 0.3s ease-in-out;
+        -moz-transition: all 0.3s ease-in-out;
+        -o-transition: all 0.3s ease-in-out;
+        -webkit-transition: all 0.3s ease-in-out;
+
+    }
+
+    .sub-header a:hover::after {
+        transform: scale(1);
+        transform-origin: top;
+        transition: all 0.3s ease-in-out;
+        -moz-transition: all 0.3s ease-in-out;
+        -o-transition: all 0.3s ease-in-out;
+        -webkit-transition: all 0.3s ease-in-out;
+    }
+}
+
+/*-------------------------------------navbar*/
+
+.my-navbar {
+    background-color: #fafafa;
+    background-color: rgba(0, 0, 0, 0);
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    padding: 0;
+}
+
+.my-navbar div {
+    padding: 0;
+}
+
+.my-navbar-ul {
+    list-style-type: none;
+    transform: scale(0, 1);
+
+    left: 0;
+    padding: 0;
+    transform-origin: right;
+    transition: all .5s cubic-bezier(0.13, 0.84, 0.42, 1.02);
+    -moz-transition: all .5s cubic-bezier(0.13, 0.84, 0.42, 1.02);
+    -o-transition: all .5s cubic-bezier(0.13, 0.84, 0.42, 1.02);
+    -webkit-transition: all .5s cubic-bezier(0.13, 0.84, 0.42, 1.02);
+
+}
+
+.burger-icon {
+    display: none;
+
+}
+
+.burger-icon:checked~.my-navbar-ul {
+    width: 100vw;
+    height: 150vh;
+    position: fixed;
+    background-color: #fafafa;
+    background-color: rgba(255, 255, 255, 0.9);
+    transform: scale(1, 1);
+    transition: all .5s cubic-bezier(0.13, 0.84, 0.42, 1.02);
+    -moz-transition: all .5s cubic-bezier(0.13, 0.84, 0.42, 1.02);
+    -o-transition: all .5s cubic-bezier(0.13, 0.84, 0.42, 1.02);
+    -webkit-transition: all .5s cubic-bezier(0.13, 0.84, 0.42, 1.02);
+
+}
+
+.burger-icon:checked+label {
+    position: fixed;
+}
+
+.nav-link {
+    color: #2e2727;
+    text-align: center;
+    padding-top: 4vh;
+    padding-bottom: 1vh;
+
+}
+
+.nav-link:hover {
+    color: #f69394;
+}
+
+
+.burger-icon-label {
+    position: absolute;
+    top: 35px;
+    right: 20px;
+    z-index: 10;
+}
+
+.burger-icon-label img {
+    height: 30px;
+    z-index: 10;
+}
+
+@media(min-width:992px) {
+    .burger-icon-label {
+        display: none;
+    }
+    .my-navbar {
+        top: 15px;
+        right: 15px;
+    }
+    .my-navbar-ul {
+        transform: scale(1);
+        display: flex;
+        list-style-type: none;
+        background-color: #fafafa;
+
+    }
+    .nav-link {
+        padding: 0;
+        margin-right: 30px;
+        text-align: right;
+
+        color: #454545;
+        transition: all 0.3s ease-in-out;
+        -moz-transition: all 0.3s ease-in-out;
+        -o-transition: all 0.3s ease-in-out;
+        -webkit-transition: all 0.3s ease-in-out;
+    }
+
+    .nav-link:hover {
+        text-decoration: none;
+        color: #f69394;
+
+        transition: all 0.3s ease-in-out;
+        -moz-transition: all 0.3s ease-in-out;
+        -o-transition: all 0.3s ease-in-out;
+        -webkit-transition: all 0.3s ease-in-out;
+    }
+}
+
+
+/*-------------------------------------left-article-styles*/
+
+.left-article-styles {
+    color: #000000;
+    margin-left: 15px;
+    margin-right: 15px;
+    padding-bottom: 30px;
+}
+
+.left-article-styles li {
+    margin-right: 10px;
+}
+
+.left-article-styles a {
+    text-decoration: none;
+    color: #000000;
+    transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+}
+
+.left-article-styles p a:hover {
+    text-decoration: none;
+    color: #829891;
+
+    transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+}
+
+/*-------------------------------------right article*/
+
+.right-article-styles {
+    color: #fafafa;
+    padding-bottom: 30px;
+
+}
+
+.right-article-styles p {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.right-article-styles li {
+    margin-left: 10px;
+    margin-right: 20px;
+}
+
+.right-article-styles a {
+    text-decoration: none;
+    color: #fafafa;
+    transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+}
+
+.right-article-styles p a:hover {
+    text-decoration: none;
+    color: #ffcaca;
+
+    transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+}
+
+/*------------------------------------FOOTER social links*/
+
+.social-network-links {
+    text-align: center;
+}
+
+.social-network-links li {
+    display: inline-block;
+    margin-right: 10px;
+    margin-top: 45px;
+
+}
+
+.social-network-links li a i {
+    color: #fafafa;
+    font-size: 18px;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    line-height: 42px;
+    text-align: center;
+    background: #373737;
+    transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+}
+
+.social-network-links li a i:hover {
+    text-decoration: none;
+    color: #373737;
+    background-color: #fafafa;
+    transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+}
+
+/*-------------------------------------footer*/
+
+.footer-styles {
+    height: 120px;
+}
+
+.footer-styles p {
+    margin: 20px;
+    color: #232323;
+    font-weight: 400;
+}
+
+.form-style {
+    margin: 20px;
+    color: #232323;
+    text-align: center;
+}
+
+
+/*------------------------------------------------------------------------------------------------HOME PAGE*/
+
+.about-me-heading {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.about-me-heading u {
+
+    text-decoration: none;
+    border-bottom: 1px solid black;
+
+}
+
+
+/*-------------------------------------carousel styles*/
+
+.carousel-styles {
+    padding-left: 0;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+/*-------------------------------------comics*/
+
+.comic-box a h3 {
+    text-align: center;
+    color: #000000;
+    font-weight: 300;
+    text-decoration: none;
+    padding-top: 20px;
+    padding-bottom: 50px;
+}
+
+.comic-box a h3:hover {
+    color: #ffcaca;
+}
+
+
+.comic-box a {
+    text-decoration: none;
+}
+
+.comic-images {
+    position: relative;
+    display: block;
+    margin: 0px auto;
+    opacity: 1;
+}
+
+@media(min-width:992px) {
+
+    .comics-styles {
+        padding-bottom: 100px;
+    }
+
+    .comic-box .comic-title h3 {
+        position: absolute;
+        top: 15px;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        opacity: 0;
+        line-height: 300px;
+        color: #fafafa;
+    }
+
+    .comic-box .comic-title::before {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 50%;
+        width: 300px;
+        transform: translatex(-50%);
+        background: black;
+        opacity: 0;
+        content: '';
+    }
+
+    .comic-box .comic-title h3:hover,
+    .comic-box .comic-title:hover::before {
+        color: #fafafa;
+        opacity: 0.8;
+        transition: all 0.3s ease-in;
+        -moz-transition: all 0.3s ease-in;
+        -o-transition: all 0.3s ease-in;
+        -webkit-transition: all 0.3s ease-in;
+    }
+}
+
+/*-------------------------------------video*/
+
+.video-style {
+    padding: 0;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.video-article {
+    text-align: center;
+}
+
+.video-article ul {
+    text-align: left;
+}
+
+
+
+
+
+/*---------------------------------------------------------------------------------------------------------HOME PAGE END*/
+
+/*---------------------------------------------------------------------------------------------------------comics page*/
+
+/*-------------------------------------comics cover image*/
+
+.comic-cover-image1,
+.comic-cover-image2,
+.comic-cover-image3,
+.comic-cover-image4 {
+    height: 50vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+@media(min-width:992px) {
+    .comic-cover-image1,
+    .comic-cover-image3 {
+        height: 70vh;
+        width: auto;
+        background-attachment: fixed;
+        -ms-background-attachment: scroll;
+        background-position: right;
+        background-repeat: no-repeat;
+        background-size: 70%;
+    }
+
+    .comic-cover-image2,
+    .comic-cover-image4 {
+        height: 70vh;
+        width: auto;
+        background-attachment: fixed;
+        background-position: left;
+        background-repeat: no-repeat;
+        background-size: 70%;
+    }
+}
+
+/* code taken from https://stackoverflow.com/questions/27966735/why-background-image-is-moving-when-scroll-at-ie to fix parallax scroll issue in edge and IE*/
+
+/*Edge*/
+
+@supports ( -ms-accelerator:true) {
+    html {
+        overflow: hidden;
+        height: 100%;
+    }
+    body {
+        overflow: auto;
+        height: 100%;
+    }
+}
+
+/*Ie 10/11*/
+
+@media screen and (-ms-high-contrast: active),
+(-ms-high-contrast: none) {
+    html {
+        overflow: hidden;
+        height: 100%;
+    }
+    body {
+        overflow: auto;
+        height: 100%;
+    }
+}
+
+/*end of copied code*/
+
+.comic-cover-image1 {
+    background-image: url('../images/comic page where no one.jpg');
+}
+
+.comic-cover-image2 {
+    background-image: url('../images/comic page Inside Phobia.jpg');
+}
+
+.comic-cover-image3 {
+    background-image: url('../images/illustrations/07.jpg');
+}
+
+.comic-cover-image4 {
+    background-image: url('../images/awkward.jpg');
+}
+
+/*-------------------------------------comics page END*/
+
+/*---------------------------------------------------------------------------------------------------------anamation page*/
+
+.video-styles {
+    padding: 0;
+}
+
+.video-article-styles {
+    padding-bottom: 25px;
+}
+
+@media(min-width:992px) {
+    .video-styles iframe {
+        padding: 5em;
+        padding-bottom: 0;
+    }
+}
+
+/*-------------------------------------anamation page END*/
+
+/*---------------------------------------------------------------------------------------------------------illustretion page*/
+
+.portfolio-row,
+large-image {
+    padding: 1rem
+}
+
+.portfolio-row figcaption,
+.large-image figcaption {
+    text-align: center;
+    background-color: #fafafa;
+    transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+    -moz-transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    -o-transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    -webkit-transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+
+}
+
+
+.portfolio-row figure label {
+    overflow: hidden;
+
+}
+
+.portfolio-row figure img,
+.large-image figure img {
+    width: 100%;
+    height: auto;
+    transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+    -moz-transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    -o-transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    -webkit-transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.illustration-icon:not(:checked)+label img:hover,
+.illustration-icon-1:not(:checked)+label img:hover,
+.illustration-icon-2:not(:checked)+label img:hover,
+.illustration-icon-3:not(:checked)+label img:hover,
+.illustration-icon-4:not(:checked)+label img:hover,
+.illustration-icon-5:not(:checked)+label img:hover,
+.illustration-icon-6:not(:checked)+label img:hover,
+.illustration-icon-7:not(:checked)+label img:hover,
+.illustration-icon-portrait:not(:checked)+label img:hover,
+.illustration-icon-portrait-1:not(:checked)+label img:hover,
+.illustration-icon-portrait-2:not(:checked)+label img:hover,
+.illustration-icon-portrait-3:not(:checked)+label img:hover,
+.illustration-icon-portrait-4:not(:checked)+label img:hover,
+.illustration-icon-portrait-5:not(:checked)+label img:hover,
+.illustration-icon-portrait-6:not(:checked)+label img:hover,
+.illustration-icon-portrait-7:not(:checked)+label img:hover {
+    opacity: 0.8;
+    transform: scale(1.2);
+    transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+    -moz-transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    -o-transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    -webkit-transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.portfolio-row figure:hover figcaption {
+    z-index: 100;
+    opacity: 1;
+    margin-top: -10px;
+    padding-bottom: 10px;
+    transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+    -moz-transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    -o-transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    -webkit-transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+
+/*-----------------------------------------------------------------------------about me page*/
+
+/*image is currently a placeholderimage to be replaced with a self portrait*/
+
+.about-me-image {
+    background: url("../images/con-list.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 360px;
+}

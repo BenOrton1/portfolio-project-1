@@ -1,0 +1,93 @@
+.illustration-icon,
+.illustration-icon-1,
+.illustration-icon-2,
+.illustration-icon-3,
+.illustration-icon-7,
+.illustration-icon-6,
+.illustration-icon-5,
+.illustration-icon-4,
+.illustration-icon-portrait,
+.illustration-icon-portrait-1,
+.illustration-icon-portrait-2,
+.illustration-icon-portrait-3,
+.illustration-icon-portrait-4,
+.illustration-icon-portrait-5,
+.illustration-icon-portrait-6,
+.illustration-icon-portrait-7 {
+    display: none;
+}
+
+.fig-text::before {
+    content: '';
+
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #fafafa;
+    transform: scale(0);
+}
+
+@media(min-width:992px) {
+    .illustration-icon:checked~.fig-text::before,
+    .illustration-icon-1:checked~.fig-text::before,
+    .illustration-icon-2:checked~.fig-text::before,
+    .illustration-icon-3:checked~.fig-text::before,
+    .illustration-icon-4:checked~.fig-text::before,
+    .illustration-icon-5:checked~.fig-text::before,
+    .illustration-icon-6:checked~.fig-text::before,
+    .illustration-icon-7:checked~.fig-text::before,
+    .illustration-icon-portrait:checked~.fig-text::before,
+    .illustration-icon-portrait-1:checked~.fig-text::before,
+    .illustration-icon-portrait-2:checked~.fig-text::before,
+    .illustration-icon-portrait-3:checked~.fig-text::before,
+    .illustration-icon-portrait-4:checked~.fig-text::before,
+    .illustration-icon-portrait-5:checked~.fig-text::before,
+    .illustration-icon-portrait-6:checked~.fig-text::before,
+    .illustration-icon-portrait-7:checked~.fig-text::before {
+        transform: scale(1);
+        z-index: 98;
+        opacity: 0.8;
+    }
+
+    .illustration-icon:checked+label,
+    .illustration-icon-1:checked+label,
+    .illustration-icon-2:checked+label,
+    .illustration-icon-3:checked+label,
+    .illustration-icon-4:checked+label,
+    .illustration-icon-5:checked+label,
+    .illustration-icon-6:checked+label,
+    .illustration-icon-7:checked+label {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translateX(-50%) translateY(-50%);
+        width: 80vw;
+        height: auto;
+        overflow: auto;
+        z-index: 99;
+    }
+
+    .illustration-icon-portrait:checked+label,
+    .illustration-icon-portrait-1:checked+label,
+    .illustration-icon-portrait-2:checked+label,
+    .illustration-icon-portrait-3:checked+label,
+    .illustration-icon-portrait-4:checked+label,
+    .illustration-icon-portrait-5:checked+label,
+    .illustration-icon-portrait-6:checked+label,
+    .illustration-icon-portrait-7:checked+label {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translateX(-50%) translateY(-50%);
+        height: 100vh;
+        width: auto;
+        overflow: auto;
+        z-index: 99;
+    }
+    .portfolio-row figure label {
+        overflow: hidden;
+        margin: 10px;
+    }
+}
